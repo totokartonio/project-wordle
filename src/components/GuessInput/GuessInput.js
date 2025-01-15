@@ -6,8 +6,6 @@ function GuessInput({ handleAddGuess }) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log({ word });
-
     handleAddGuess(word);
 
     setWord("");
