@@ -27,8 +27,7 @@ function Game() {
 
     if (word === answer) {
       setGameStatus("won");
-    }
-    if (nextGuesses.length >= NUM_OF_GUESSES_ALLOWED) {
+    } else if (nextGuesses.length >= NUM_OF_GUESSES_ALLOWED) {
       setGameStatus("lost");
     }
   }
